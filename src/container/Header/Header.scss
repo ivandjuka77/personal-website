@@ -1,0 +1,108 @@
+#home {
+    width: 100%;
+    height: 100vh;
+    padding-top: 4.4rem;
+    margin-bottom: 0;
+
+    background-color: rgb(24, 24, 24);
+
+    display: flex;
+    flex-direction: row;
+    .header-left {
+        width: 33%;
+        height: 100vh;
+
+        background-color: #8758FF;
+
+        display: flex;
+        flex-flow: column wrap;
+        align-items: center;
+        
+        .header-headshot {
+            width: 250px;
+
+            border-radius: 25px;
+            margin-top: 100px;
+
+            position: relative;
+            right: 40px;
+        }
+
+        .header-left-text {
+            position: relative;
+            right: 30px;
+
+            margin-top: 10px;
+            .header-name {
+                text-decoration-line: underline;
+            }
+
+            h2 {
+                margin-top: 15px;
+            }
+
+            .wave {
+                animation-name: wave-animation;  /* Refers to the name of your @keyframes element below */
+                animation-delay: 1s;
+                animation-duration: 2s;        /* Change to speed up or slow down */
+                transform-origin: 70% 70%;       /* Pivot around the bottom-left palm */
+                display: inline-block;
+
+                @keyframes wave-animation {
+                    0% { transform: rotate( 0.0deg) }
+                    10% { transform: rotate(14.0deg) }  /* The following five values can be played with to make the waving more or less extreme */
+                    20% { transform: rotate(-8.0deg) }
+                    30% { transform: rotate(14.0deg) }
+                    40% { transform: rotate(-4.0deg) }
+                    50% { transform: rotate(10.0deg) }
+                    60% { transform: rotate( 0.0deg) }  /* Reset for the last half to pause */
+                    100% { transform: rotate( 0.0deg) }
+                }
+            }
+        }
+    }
+}
+
+.header-right {
+    margin-top: 4rem;
+    padding-left: 6rem;
+    color: #F2F2F2;
+    h1 {
+        padding-top: 2rem;
+        line-height: 60px;
+    }
+
+    h2 {
+        margin-top: 160px ;
+    }
+
+    .header-skills{
+
+        display: flex;
+        flex-flow: row;
+        
+        margin-top: 40px;
+        
+        h3 {
+            align-self: center;
+            margin: 0 20px;
+        }
+
+        svg {
+            width: 80px;
+            height: 80px;
+        }
+
+        .header-skills-element{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+
+            margin-right: 70px;
+
+            h3 {
+                margin-top: 15px;
+            }
+        }
+    }
+}
