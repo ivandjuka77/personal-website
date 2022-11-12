@@ -1,7 +1,6 @@
 import React from 'react';
 
 import { FaReact, FaJsSquare, FaNodeJs, FaDatabase } from 'react-icons/fa';
-import { SiNextdotjs } from 'react-icons/si';
 import './Header.scss';
 import headshot from '../../assets/headshot.png';
 import { motion } from 'framer-motion';
@@ -62,16 +61,6 @@ const Header = () => {
 					>
 						<FaReact />
 						<h3>React.js</h3>
-					</motion.div>
-					<motion.div
-						initial={{ opacity: 0 }}
-						animate={{ opacity: 1, transition: { duration: 1.2, delay: 1.1 } }}
-						whileHover={{ scale: 1.1, color: '#8758FF' }}
-						transition={{ duration: 0.4, type: 'tween' }}
-						className='header-skills-element'
-					>
-						<SiNextdotjs />
-						<h3>Next.js</h3>
 					</motion.div>
 					<motion.div
 						initial={{ opacity: 0 }}

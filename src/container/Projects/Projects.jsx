@@ -7,16 +7,25 @@ import SocialMedia from '../../components/SocialMedia/SocialMedia';
 let projects = [
 	{
 		title: "Gatsby's Waiter",
+		id: 'project-gatsby',
 		desc: 'Simple POS system for waiters',
-		imgUrl: 'https://i.imgur.com/XZm2irP.png',
+		imgUrl: require('../../assets/gatsby.png'),
 		link: '',
 	},
 
 	{
 		title: 'Barber Cuts',
+		id: 'project-barber',
 		desc: 'Business website for Barber shop',
-		imgUrl: 'https://i.imgur.com/hN2vkac.png',
+		imgUrl: require('../../assets/barber-cuts.png'),
 		link: 'https://barbercuts.netlify.app/',
+	},
+	{
+		title: 'QR Coder',
+		id: 'project-qr',
+		desc: 'Simple QR Code generator',
+		imgUrl: require('../../assets/qrcoder.png'),
+		link: 'https://qrcoder-project.netlify.app/',
 	},
 ];
 
@@ -46,17 +55,21 @@ const Projects = () => {
 							whileHover={{ scale: 1.1 }}
 							transition={{ duration: 0.5, type: 'tween' }}
 							className='projects-right-item'
+							id={project.id}
 							key={project.title + index}
 						>
 							<a
 								href={project.link}
 								target='_blank'
+								rel='noreferrer'
 							>
 								<img
 									src={project.imgUrl}
+									id={project.id + '-img'}
 									alt='projectimg'
 									className='project-img'
 								/>
+
 								<h2>{project.title}</h2>
 								<p>{project.desc}</p>
 							</a>

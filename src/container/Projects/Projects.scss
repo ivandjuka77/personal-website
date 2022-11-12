@@ -64,9 +64,15 @@
 					color: inherit;
 				}
 				.project-img {
-					width: 250px;
+					width: 150px;
 					margin-bottom: 20px;
-					border-radius: 15px;
+					border: 10px solid #8758ff;
+					border-radius: 30px;
+					padding: 20px;
+					background-color: #8758ff;
+				}
+				#project-gatsby-img {
+					padding: 15px;
 				}
 			}
 		}
