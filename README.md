@@ -7,7 +7,7 @@ This is my personal Portfolio Website which holds a little bit about me, my soci
 
 ## How It's Made:
 
-**Tech used:** HTML, CSS, React, JavaScript, Framer for animations
+**Tech used:** HTML, CSS, Sass, React, JavaScript, Framer for animations
 
 ## Optimizations
 
