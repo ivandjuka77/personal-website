@@ -13,3 +13,5 @@ This is my personal Portfolio Website which holds a little bit about me, my soci
 
 - Add media tags
 - Redo the CSS
+
+## Thank you for checking out my project! Feel free to look at the rest of my Github :)
