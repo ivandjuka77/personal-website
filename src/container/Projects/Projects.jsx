@@ -10,7 +10,7 @@ let projects = [
 		id: 'project-gatsby',
 		desc: 'Simple POS system for waiters',
 		imgUrl: require('../../assets/gatsby.png'),
-		link: '',
+		link: '#',
 	},
 
 	{
@@ -28,6 +28,15 @@ let projects = [
 		link: 'https://qrcoder-project.netlify.app/',
 	},
 ];
+
+const projectError = (id) => {
+	if (id === 'project-gatsby') {
+		alert(
+			'Unfortunately this project demo is currently unavaiable. You can check the project out on Github until the problem is resloved!'
+		);
+	}
+	return false;
+};
 
 const Projects = () => {
 	return (
@@ -59,6 +68,7 @@ const Projects = () => {
 							key={project.title + index}
 						>
 							<a
+								onClick={() => projectError(project.id)}
 								href={project.link}
 								target='_blank'
 								rel='noreferrer'
