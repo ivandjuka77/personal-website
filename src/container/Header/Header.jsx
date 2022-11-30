@@ -45,6 +45,28 @@ const Header = () => {
 					my personal projects, and how to contact me.
 				</motion.h1>
 
+				<a
+					href='https://drive.google.com/file/d/17Wyk09G57eLIhKboXSg37sWXZ0y10MN6/view?usp=sharing'
+					target='_blank'
+					rel='noreferrer'
+				>
+					<motion.button
+						initial={{ opacity: 0, x: -10 }}
+						animate={{
+							opacity: 1,
+							x: 0,
+							transition: { duration: 1.2, delay: 0.7 },
+						}}
+						whileHover={{
+							scale: 1.1,
+							backgroundColor: '#8758FF',
+						}}
+						transition={{ duration: 0.4, type: 'tween' }}
+					>
+						My resume
+					</motion.button>
+				</a>
+
 				<motion.h2
 					initial={{ opacity: 0 }}
 					animate={{ opacity: 1, transition: { duration: 1.2, delay: 0.9 } }}
