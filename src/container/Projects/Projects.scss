@@ -74,6 +74,26 @@
 				#project-gatsby-img {
 					padding: 15px;
 				}
+				.btns {
+					display: flex;
+					flex-direction: column;
+				}
+				button {
+					margin-top: 10px;
+
+					background-color: #8758ff;
+
+					border-radius: 5px;
+
+					color: white;
+					font-family: inherit;
+					font-size: 1rem;
+
+					cursor: pointer;
+
+					width: 200px;
+					height: 40px;
+				}
 			}
 		}
 	}

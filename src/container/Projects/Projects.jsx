@@ -10,7 +10,8 @@ let projects = [
 		id: 'project-gatsby',
 		desc: 'Simple POS system for waiters',
 		imgUrl: require('../../assets/gatsby.png'),
-		link: '#',
+		link: 'https://github.com/ivandjuka77/WIP-gatsbys-waiter',
+		github: 'https://github.com/ivandjuka77/WIP-gatsbys-waiter',
 	},
 
 	{
@@ -19,6 +20,7 @@ let projects = [
 		desc: 'Business website for Barber shop',
 		imgUrl: require('../../assets/barber-cuts.png'),
 		link: 'https://barbercuts.netlify.app/',
+		github: 'https://github.com/ivandjuka77/barber-cuts-new',
 	},
 	{
 		title: 'QR Coder',
@@ -26,6 +28,7 @@ let projects = [
 		desc: 'Simple QR Code generator',
 		imgUrl: require('../../assets/qrcoder.png'),
 		link: 'https://qrcoder-project.netlify.app/',
+		github: 'https://github.com/ivandjuka77/qr-coder',
 	},
 ];
 
@@ -83,6 +86,33 @@ const Projects = () => {
 								<h2>{project.title}</h2>
 								<p>{project.desc}</p>
 							</a>
+							<div className='btns'>
+								<a
+									href={project.link}
+									target='_blank'
+									rel='noreferrer'
+									onClick={() => projectError(project.id)}
+								>
+									<motion.button
+										whileHover={{ scale: 1.05 }}
+										transition={{ duration: 0.3, type: 'tween' }}
+									>
+										Live Demo
+									</motion.button>
+								</a>
+								<a
+									href={project.github}
+									target='_blank'
+									rel='noreferrer'
+								>
+									<motion.button
+										whileHover={{ scale: 1.05 }}
+										transition={{ duration: 0.3, type: 'tween' }}
+									>
+										GitHub
+									</motion.button>
+								</a>
+							</div>
 						</motion.div>
 					))}
 				</div>
