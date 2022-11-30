@@ -1,76 +1,76 @@
 #about {
-    width: 100%;
-    height: 100vh;
+	width: 100%;
+	height: 100vh;
 
-    background-color: rgb(24, 24, 24);
+	background-color: rgb(24, 24, 24);
 
-    display: flex;
-    flex-direction: row;
+	display: flex;
+	flex-direction: row;
 
-    .about-left {
-        width: 33%;
-        height: 100%;
+	.about-left {
+		width: 33%;
+		height: 100%;
 
-        background-color: #8758FF;
+		background-color: #8758ff;
 
-        display: flex;
-        flex-direction: column;
-        align-items: flex-start;
-        justify-content: center;
+		display: flex;
+		flex-direction: column;
+		align-items: flex-start;
+		justify-content: center;
 
-        h1 {
-            font-size: 3.5rem;
-            margin-left: 70px;
-        }
+		h1 {
+			font-size: 3.5rem;
+			margin-left: 70px;
+		}
 
-        .about-socials {
-            align-self: center;
+		.about-socials {
+			align-self: center;
 
-            position: relative;
-            top: 37%;
-            width: 100%;
-        }
-    }
+			position: relative;
+			top: 37%;
+			width: 100%;
+		}
+	}
 
-    .about-right {
-        color: #F2F2F2;
-        padding-left: 6rem;
-        padding-top: 9rem;
-        max-width: 66%;
+	.about-right {
+		color: #f2f2f2;
+		padding-left: 6rem;
+		padding-top: 9rem;
+		max-width: 66%;
 
-        .about-story {
-            margin-bottom: 30px;
-        }
+		.about-story {
+			margin-bottom: 30px;
+		}
 
-        .about-motivation {
-            font-weight: 700;
-        }
+		.about-motivation {
+			font-weight: 700;
+		}
 
-        .about-skills-title {
-            margin: 60px 0;
-        }
+		.about-skills-title {
+			margin: 60px 0;
+		}
 
-        .about-skills  {
-            display: flex;
-            flex-direction: row;
-            justify-content: center;
+		.about-skills {
+			display: flex;
+			flex-direction: row;
+			justify-content: center;
 
-            svg {
-                width: 80px;
-                height: 80px;
-            }
+			svg {
+				width: 80px;
+				height: 80px;
+			}
 
-            .about-skills-element {
-                display: flex;
-                flex-direction: column;
-                align-items: center;
+			.about-skills-element {
+				display: flex;
+				flex-direction: column;
+				align-items: center;
 
-                margin-right: 70px;
-                
-                span {
-                    margin-top: 10px;
-                }
-            }
-        }
-    }
+				margin-right: 70px;
+
+				span {
+					margin-top: 10px;
+				}
+			}
+		}
+	}
 }
