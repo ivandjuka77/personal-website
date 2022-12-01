@@ -1,15 +1,15 @@
 {
   "files": {
     "main.css": "/static/css/main.e6cbbd0d.css",
-    "main.js": "/static/js/main.1a4960b1.js",
+    "main.js": "/static/js/main.4631fc63.js",
     "static/media/headshot.png": "/static/media/headshot.78066e246c1e95dda1de.png",
     "static/media/barber-cuts.png": "/static/media/barber-cuts.a3ed5b33c42ba6d70eda.png",
     "index.html": "/index.html",
     "main.e6cbbd0d.css.map": "/static/css/main.e6cbbd0d.css.map",
-    "main.1a4960b1.js.map": "/static/js/main.1a4960b1.js.map"
+    "main.4631fc63.js.map": "/static/js/main.4631fc63.js.map"
   },
   "entrypoints": [
     "static/css/main.e6cbbd0d.css",
-    "static/js/main.1a4960b1.js"
+    "static/js/main.4631fc63.js"
   ]
 }
