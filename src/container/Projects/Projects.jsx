@@ -10,7 +10,7 @@ let projects = [
 		id: 'project-gatsby',
 		desc: 'Simple POS system for waiters',
 		imgUrl: require('../../assets/gatsby.png'),
-		link: 'https://github.com/ivandjuka77/WIP-gatsbys-waiter',
+		link: 'https://gatsby-waiter.onrender.com',
 		github: 'https://github.com/ivandjuka77/WIP-gatsbys-waiter',
 	},
 
@@ -31,15 +31,6 @@ let projects = [
 		github: 'https://github.com/ivandjuka77/qr-coder',
 	},
 ];
-
-const projectError = (id) => {
-	if (id === 'project-gatsby') {
-		alert(
-			'Unfortunately this project demo is currently unavaiable. You can check the project out on Github until the problem is resloved!'
-		);
-	}
-	return false;
-};
 
 const Projects = () => {
 	return (
@@ -71,7 +62,6 @@ const Projects = () => {
 							key={project.title + index}
 						>
 							<a
-								onClick={() => projectError(project.id)}
 								href={project.link}
 								target='_blank'
 								rel='noreferrer'
@@ -91,7 +81,6 @@ const Projects = () => {
 									href={project.link}
 									target='_blank'
 									rel='noreferrer'
-									onClick={() => projectError(project.id)}
 								>
 									<motion.button
 										whileHover={{ scale: 1.05 }}
